@@ -1,0 +1,60 @@
+.postCategories button {
+	color: #8a8a8a;
+}
+.postCategories button:hover {
+	color: #000000;
+}
+.nav-link {
+	padding: 0.5rem 12px !important;
+}
+.nav-link.active {
+	color: #000000 !important;
+	background: none !important;
+	position: relative;
+	transition: all 0.3s;
+}
+.nav-link.active::after {
+	content: "";
+	background: #000000;
+	height: 1.5px;
+	width: 100%;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+@media screen and (max-width: 768px) {
+	.border-bottom {
+		border: none !important;
+	}
+}
+
+.writePostButton,
+.groupJoinButton,
+.mobileFilter {
+	box-shadow: none !important;
+	border-radius: 4px;
+	padding: 8px 12px;
+	margin: 8px;
+	font-weight: 500;
+	font-size: 14px;
+}
+.writePostButton,
+.mobileFilter {
+	background: #edeef0;
+}
+.groupLeaveButton {
+	font-size: 14px;
+	background: #ffffff !important;
+	box-shadow: none !important;
+	border-radius: 4px;
+	padding: 8px 12px;
+	margin: 8px;
+	font-weight: 500;
+	color: #6a6a6b !important;
+	border-color: #989899;
+}
+
+/* Mobile */
+.mobileFilter {
+	font-weight: 500;
+}

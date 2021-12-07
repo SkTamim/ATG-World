@@ -14,7 +14,7 @@ function Header(props) {
 			<div className='searchBox'>
 				<form>
 					<div className='input-group'>
-						<span class='input-group-text'>
+						<span className='input-group-text'>
 							<SearchIcon />
 						</span>
 						<input
@@ -38,19 +38,19 @@ function Header(props) {
 						Create account. <span className='text-primary'>It's free!</span>
 					</div>
 
-					<ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
+					<ul className='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
 						<li>
-							<a class='dropdown-item' href='#'>
-								Sign Up
+							<a className='dropdown-item' href='#'>
+								Create account
 							</a>
 						</li>
 						<li>
-							<a class='dropdown-item' href='#'>
-								Sign In
+							<a className='dropdown-item' href='#'>
+								Log In
 							</a>
 						</li>
 						<li>
-							<a class='dropdown-item' href='#'>
+							<a className='dropdown-item' href='#'>
 								Terms and Conditions
 							</a>
 						</li>
@@ -70,19 +70,19 @@ function Header(props) {
 						/>
 						{props.name}
 					</div>
-					<ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
+					<ul className='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
 						<li>
-							<a class='dropdown-item' href='#'>
+							<a className='dropdown-item' href='#'>
 								My Profile
 							</a>
 						</li>
 						<li>
-							<a class='dropdown-item' href='#'>
+							<a className='dropdown-item' href='#'>
 								Edit Profile
 							</a>
 						</li>
 						<li>
-							<a class='dropdown-item' href='#'>
+							<a className='dropdown-item' href='#'>
 								Log Out
 							</a>
 						</li>
