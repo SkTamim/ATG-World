@@ -1,9 +1,10 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 import "../assets/css/header.css";
 import logo from "../assets/images/logo.svg";
 import SearchIcon from "@mui/icons-material/Search";
 
-function Header() {
+function Header(props) {
 	return (
 		<section className='header mx-3 px-4 px-lg-5 py-2 d-none d-md-flex justify-content-between align-items-center'>
 			<a href='#' className='logo'>
@@ -27,36 +28,81 @@ function Header() {
 				</form>
 			</div>
 
-			<div className='createAccount dropdown'>
-				<div
-					className='dropdown-toggle cursor-pointer'
-					id='createAcDropdown'
-					data-bs-toggle='dropdown'
-					aria-expanded='false'
-				>
-					Create account. <span className='text-primary'>It's free!</span>
-				</div>
+			{props.loginEd === false ? (
+				<div className='createAccount dropdown'>
+					<div
+						className='dropdown-toggle cursor-pointer'
+						data-bs-toggle='dropdown'
+						aria-expanded='false'
+					>
+						Create account. <span className='text-primary'>It's free!</span>
+					</div>
 
-				<ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
-					<li>
-						<a class='dropdown-item' href='#'>
-							Sign Up
-						</a>
-					</li>
-					<li>
-						<a class='dropdown-item' href='#'>
-							Sign In
-						</a>
-					</li>
-					<li>
-						<a class='dropdown-item' href='#'>
-							Terms and Conditions
-						</a>
-					</li>
-				</ul>
-			</div>
+					<ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
+						<li>
+							<a class='dropdown-item' href='#'>
+								Sign Up
+							</a>
+						</li>
+						<li>
+							<a class='dropdown-item' href='#'>
+								Sign In
+							</a>
+						</li>
+						<li>
+							<a class='dropdown-item' href='#'>
+								Terms and Conditions
+							</a>
+						</li>
+					</ul>
+				</div>
+			) : (
+				<div className='dropdown'>
+					<div
+						className='dropdown-toggle cursor-pointer name'
+						data-bs-toggle='dropdown'
+						aria-expanded='false'
+					>
+						<img
+							src={props.profilePic}
+							alt='Profile Picture'
+							className='px-2 profile-pic img-fluid'
+						/>
+						{props.name}
+					</div>
+					<ul class='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
+						<li>
+							<a class='dropdown-item' href='#'>
+								My Profile
+							</a>
+						</li>
+						<li>
+							<a class='dropdown-item' href='#'>
+								Edit Profile
+							</a>
+						</li>
+						<li>
+							<a class='dropdown-item' href='#'>
+								Log Out
+							</a>
+						</li>
+					</ul>
+				</div>
+			)}
 		</section>
 	);
 }
+
+// checking proptype for avoiding errors
+Header.propTypes = {
+	loginEd: PropTypes.bool,
+	name: PropTypes.string,
+	profilePic: PropTypes.string,
+};
+Header.defaultProps = {
+	loginEd: false,
+	name: null,
+	profilePic: null,
+};
 
 export default Header;
