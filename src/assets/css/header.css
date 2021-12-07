@@ -1,0 +1,32 @@
+.createAccount {
+	font-weight: 700;
+}
+.cursor-pointer {
+	cursor: pointer;
+	user-select: none;
+}
+.searchBox .input-group {
+	width: 360px;
+}
+.searchBox input {
+	background: #f2f2f2;
+	color: #5c5c5c;
+	border-radius: 21px;
+	box-shadow: none !important;
+	border: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 13px;
+	padding-left: 0;
+}
+.searchBox .input-group-text {
+	box-shadow: none !important;
+	border: none;
+	background: #f2f2f2;
+	color: #5c5c5c;
+	border-radius: 21px;
+}
+.searchBox input:focus {
+	background: #f2f2f2;
+}
