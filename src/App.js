@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "./components/Header";
 import "./assets/css/main.css";
+import Hero from "./components/Hero";
 
 function App() {
 	return (
 		<>
-			<Header className='d-none d-lg-flex' />
+			<Header />
+			<Hero />
 		</>
 	);
 }
