@@ -1,0 +1,20 @@
+.heading {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.followBtn {
+	background: #edeef0;
+	border-radius: 50px;
+	padding: 2px 20px;
+}
+.followBtn:hover {
+	background: #dddddd;
+}
+.followed {
+	background: #000000;
+	color: #ffffff;
+}
+.followBtn.followed:hover {
+	background: #383838;
+	color: #ffffff;
+}

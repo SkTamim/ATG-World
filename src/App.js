@@ -9,10 +9,12 @@ import PostSection from "./components/PostSection";
 function App() {
 	return (
 		<>
+			{/* if you want to see without login view then sent the "loginEd" prop "false"*/}
 			<Header loginEd={false} name='Sk Tamim' profilePic={profilePic} />
 			<Hero />
 			<PostCategories />
-			<PostSection />
+			{/* if you want to see without login view then sent the "loginEd" prop "false" */}
+			<PostSection loginEd={true} />
 		</>
 	);
 }

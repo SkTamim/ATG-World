@@ -89,7 +89,7 @@ Header.propTypes = {
 };
 Header.defaultProps = {
 	loginEd: false,
-	name: null,
+	name: "User",
 	profilePic: null,
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 import Post from "./Post";
 import post1 from "../assets/images/post-1.png";
 import post2 from "../assets/images/post-2.png";
@@ -8,8 +9,10 @@ import profile2 from "../assets/images/profile-pic-3.png";
 import profile3 from "../assets/images/profile-pic-4.png";
 import profile4 from "../assets/images/profile-pic.png";
 import PenIcon from "./PenIcon";
+import LocationForm from "./LocationForm";
+import RecommendedGroup from "./RecommendedGroup";
 
-function PostSection() {
+function PostSection(props) {
 	return (
 		<section className='post-section'>
 			<div className='container'>
@@ -56,6 +59,10 @@ function PostSection() {
 							name='Joseph Gray'
 						/>
 					</div>
+					<div className='col-md-4 g-0 g-lg-3 d-none d-md-block'>
+						<LocationForm />
+						{props.loginEd ? <RecommendedGroup /> : null}
+					</div>
 				</div>
 			</div>
 
@@ -64,5 +71,13 @@ function PostSection() {
 		</section>
 	);
 }
+
+// checking proptype for avoiding errors
+PostSection.propTypes = {
+	loginEd: PropTypes.bool,
+};
+PostSection.defaultProps = {
+	loginEd: false,
+};
 
 export default PostSection;
