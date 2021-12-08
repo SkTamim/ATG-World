@@ -36,24 +36,16 @@ function PostCategories() {
 
 						<ul className='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
 							<li>
-								<a className='dropdown-item' href='#'>
-									Article
-								</a>
+								<button className='dropdown-item'>Article</button>
 							</li>
 							<li>
-								<a className='dropdown-item' href='#'>
-									Event
-								</a>
+								<button className='dropdown-item'>Event</button>
 							</li>
 							<li>
-								<a className='dropdown-item' href='#'>
-									Education
-								</a>
+								<button className='dropdown-item'>Education</button>
 							</li>
 							<li>
-								<a className='dropdown-item' href='#'>
-									Job
-								</a>
+								<button className='dropdown-item'>Job</button>
 							</li>
 						</ul>
 					</div>
@@ -96,24 +88,16 @@ function PostCategories() {
 								aria-labelledby='dropdownMenuButton1'
 							>
 								<li>
-									<a className='dropdown-item' href='#'>
-										Article
-									</a>
+									<button className='dropdown-item'>Article</button>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
-										Event
-									</a>
+									<button className='dropdown-item'>Event</button>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
-										Education
-									</a>
+									<button className='dropdown-item'>Education</button>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
-										Job
-									</a>
+									<button className='dropdown-item'>Job</button>
 								</li>
 							</ul>
 						</div>

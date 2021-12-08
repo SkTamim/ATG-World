@@ -7,7 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 function Header(props) {
 	return (
 		<section className='header mx-3 px-4 px-lg-5 py-2 d-none d-md-flex justify-content-between align-items-center'>
-			<a href='#' className='logo'>
+			<a href='/#' className='logo'>
 				<img src={logo} alt='Logo' className='img-fluid' />
 			</a>
 
@@ -40,19 +40,13 @@ function Header(props) {
 
 					<ul className='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
 						<li>
-							<a className='dropdown-item' href='#'>
-								Create account
-							</a>
+							<button className='dropdown-item'>Create account</button>
 						</li>
 						<li>
-							<a className='dropdown-item' href='#'>
-								Log In
-							</a>
+							<button className='dropdown-item'>Log In</button>
 						</li>
 						<li>
-							<a className='dropdown-item' href='#'>
-								Terms and Conditions
-							</a>
+							<button className='dropdown-item'>Terms and Conditions</button>
 						</li>
 					</ul>
 				</div>
@@ -65,26 +59,20 @@ function Header(props) {
 					>
 						<img
 							src={props.profilePic}
-							alt='Profile Picture'
+							alt='Profile'
 							className='px-2 profile-pic img-fluid'
 						/>
 						{props.name}
 					</div>
 					<ul className='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
 						<li>
-							<a className='dropdown-item' href='#'>
-								My Profile
-							</a>
+							<button className='dropdown-item'>My Profile</button>
 						</li>
 						<li>
-							<a className='dropdown-item' href='#'>
-								Edit Profile
-							</a>
+							<button className='dropdown-item'>Edit Profile</button>
 						</li>
 						<li>
-							<a className='dropdown-item' href='#'>
-								Log Out
-							</a>
+							<button className='dropdown-item'>Log Out</button>
 						</li>
 					</ul>
 				</div>
@@ -97,7 +85,7 @@ function Header(props) {
 Header.propTypes = {
 	loginEd: PropTypes.bool,
 	name: PropTypes.string,
-	profilePic: PropTypes.string,
+	profilePic: PropTypes.any,
 };
 Header.defaultProps = {
 	loginEd: false,

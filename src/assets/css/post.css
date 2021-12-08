@@ -1,0 +1,46 @@
+.post-category {
+	font-weight: 500;
+	font-size: 18px;
+}
+.optionsBtn {
+	padding: 8px 13px;
+}
+.optionsBtn:focus {
+	background: #bfc0c0;
+	border-radius: 4px;
+}
+
+.btn {
+	box-shadow: none !important;
+}
+.views {
+	color: #525252;
+	margin-right: 40px;
+}
+.share {
+	background: #edeef0;
+	border-radius: 2px;
+	color: #2d2d2d;
+}
+
+.webLink {
+	width: 100%;
+	border: 1px solid #a9aeb8;
+	border-radius: 8px;
+	text-align: center;
+	font-weight: 600;
+}
+.webLink-meetup {
+	color: #e56135;
+}
+.webLink-meetup:hover {
+	color: #e56135;
+	background: #ebe3df;
+}
+.webLink-job {
+	color: #02b875;
+}
+.webLink-job:hover {
+	color: #02b875;
+	background: #d7f0e0;
+}

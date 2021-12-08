@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../assets/css/hero.css";
-import heroBg from "../assets/images/hero-bg.png";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 function Hero() {
@@ -29,16 +28,15 @@ function Hero() {
 			</div>
 			{/* For small screens */}
 			<div className='smallScreen d-flex d-md-none my-3 justify-content-between align-items-center'>
-				<a href='#' className='backBtn text-light ms-3'>
+				<button className='backBtn btn text-light ms-3'>
 					<ArrowBackIcon />
-				</a>
-				<a
-					href='#'
+				</button>
+				<button
 					className='joinGroupBtn btn me-3 text-light'
 					onClick={clickEvent}
 				>
 					{joinGroup}
-				</a>
+				</button>
 			</div>
 		</section>
 	);
