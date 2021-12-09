@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { PropTypes } from "prop-types";
 import "../assets/css/header.css";
 import logo from "../assets/images/logo.svg";
 import SearchIcon from "@mui/icons-material/Search";
+import CreateAccount from "./CreateAccount";
 
 function Header(props) {
+	const [btnType, setBtnType] = useState("");
+	const clickEvent = (e) => {
+		if (e.target.innerText === "Create account") {
+			setBtnType("signUp");
+		} else if (e.target.innerText === "Log In") {
+			setBtnType("login");
+		}
+	};
 	return (
 		<section className='header mx-3 px-4 px-lg-5 py-2 d-none d-md-flex justify-content-between align-items-center'>
 			<a href='/#' className='logo'>
@@ -40,10 +49,24 @@ function Header(props) {
 
 					<ul className='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
 						<li>
-							<button className='dropdown-item'>Create account</button>
+							<button
+								className='dropdown-item'
+								data-bs-toggle='modal'
+								data-bs-target='#modal'
+								onClick={clickEvent}
+							>
+								Create account
+							</button>
 						</li>
 						<li>
-							<button className='dropdown-item'>Log In</button>
+							<button
+								className='dropdown-item'
+								data-bs-toggle='modal'
+								data-bs-target='#modal'
+								onClick={clickEvent}
+							>
+								Log In
+							</button>
 						</li>
 						<li>
 							<button className='dropdown-item'>Terms and Conditions</button>
@@ -77,6 +100,9 @@ function Header(props) {
 					</ul>
 				</div>
 			)}
+			<div className='modal fade' id='modal' data-bs-keyboard='false'>
+				<CreateAccount whatBtn={btnType} />
+			</div>
 		</section>
 	);
 }

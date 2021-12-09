@@ -1,0 +1,20 @@
+.mobileSignUp .modalCloseBtn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 5px;
+	fill: white;
+	cursor: pointer;
+	z-index: 3;
+}
+.mobileSignUp .createBtn {
+	width: initial;
+	font-size: 13px;
+}
+.orSignUp {
+	font-size: 14px;
+	color: #495057;
+	text-decoration: underline;
+}

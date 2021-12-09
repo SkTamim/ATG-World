@@ -1,0 +1,13 @@
+.MobileCreateAc {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.6);
+}
+.MobileCreateAc .showModal {
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	background: #f0f0f0;
+	margin: 0 10px;
+}

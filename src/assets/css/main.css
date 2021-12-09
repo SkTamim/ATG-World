@@ -19,4 +19,5 @@ a {
 	right: 18px;
 	bottom: 18px;
 	color: #ffffff;
+	z-index: 5;
 }

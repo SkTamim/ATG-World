@@ -14,10 +14,10 @@ import RecommendedGroup from "./RecommendedGroup";
 
 function PostSection(props) {
 	return (
-		<section className='post-section'>
+		<section className='post-section mb-5'>
 			<div className='container'>
 				<div className='row'>
-					<div className='col-md-8'>
+					<div className='col-md-8 px-lg-0'>
 						<Post
 							category='✍️ Article'
 							title='What if famous brands had regular fonts? Meet RegulaBrands!'

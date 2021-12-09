@@ -1,0 +1,125 @@
+.modal-header {
+	background: #effff4;
+	font-weight: 500;
+	color: #008a45;
+	border: none;
+	font-size: 14px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.modal-dialog input {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	border-radius: 0;
+	background: #f7f8fa;
+	padding: 10px 12px;
+}
+
+.input-group-text {
+	border-radius: 0;
+	background: #f7f8fa;
+	border-left: none;
+}
+
+#password {
+	border-right: none;
+}
+
+#firstName {
+	border-radius: 4px 0 0 0;
+}
+
+#lastName {
+	border-radius: 0 4px 0 0;
+}
+
+#ConfirmPassword {
+	border-radius: 0 0 4px 4px;
+}
+
+.modal-dialog input:focus {
+	background: #f7f8fa;
+}
+
+.modal-dialog {
+	max-width: 736px !important;
+}
+
+.modalCloseBtn {
+	position: absolute;
+	right: -10px;
+	top: -25px;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	background-color: #ffffff;
+	color: transparent;
+	border-radius: 50%;
+}
+
+.createBtn {
+	width: 100%;
+	background: #2f6ce5;
+	margin: 10px 0;
+	border-radius: 50px;
+	color: #ffffff;
+}
+
+.createBtn:hover {
+	background: #2a61cf;
+	color: #ffffff;
+}
+
+.socialLogin {
+	width: 100%;
+	border: 1px solid #d9d9db;
+	margin: 5px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.logInBtn {
+	border: none;
+	outline: none;
+	background: none;
+	font-weight: 500;
+}
+
+.upperText {
+	font-size: 13px;
+}
+
+.signInFooter {
+	font-size: 11px;
+}
+
+#logInEmail {
+	border-radius: 4px 4px 0 0;
+}
+
+#logInPassword {
+	border-radius: 0 0 0 4px;
+	border-right: none;
+}
+
+.logInPassword-goup {
+	border-radius: 0 0 4px 0;
+	border-left: none;
+}
+
+.forgetPassword {
+	width: 100%;
+	font-weight: 500;
+}
+
+.forgetPassword:hover {
+	color: rgba(0, 0, 0, 0.651);
+}
