@@ -51,7 +51,7 @@ function PostCategories() {
 					</div>
 				</div>
 
-				<div className='row align-items-center'>
+				<div className='row align-items-center g-0'>
 					<div className='col-lg-8 col-md-7 postCategories d-none d-md-block'>
 						<ul className='nav nav-pills'>
 							<li className='nav-item'>
